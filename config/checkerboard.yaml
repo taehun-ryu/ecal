@@ -1,0 +1,70 @@
+# Local checkerboard calibration configuration
+
+# input/output
+h5_path: "/absolute/path/to/your/data/input.h5"
+out_dir: "results/checkerboard/"
+
+# sensor size
+width: 346
+height: 260
+
+# windowing (adaptive)
+# - Start each window with length = window_sec.
+# - If collected events < min_events and current window_len < max_window_sec,
+#   the window is extended (in steps of window_sec) up to max_window_sec.
+# - If collected events >= max_events, the window is cut early at that time.
+# - To enforce a fixed window length, set:
+#     window_sec = min_window_sec = max_window_sec (e.g., 0.01)
+window_sec: 0.1
+min_events: 10000
+max_events: 30000
+min_window_sec: 0.05
+max_window_sec: 0.15
+
+# initial (checkerboard geometry)
+# `board_w` / `board_h` are INNER corner counts (not square counts).
+# Example: a 6x8 checkerboard (squares) should be set as board_h=5, board_w=7.
+board_h: 5
+board_w: 7
+square_size: 0.4
+expected_corners: -1   # auto = board_w * board_h if < 0
+
+# CM (contrast maximization)
+# objective on IWE: true=variance, false=L2(RMS)
+use_variance: true
+
+# CM IWE kernel
+cm_iwe.sigma: 1.0              # Gaussian sigma
+cm_iwe.cutoff_factor: 3.0      # radius = sigma * cutoff_factor
+cm_iwe.patch_radius_override: -1  # >=0 overrides kernel radius
+
+# CM tracker
+tracker.num_threads: 4
+tracker.max_iterations: 200
+
+# patch extraction
+pp_radius: 5
+
+# refinement (corner)
+corner_refine.max_iter: 200
+corner_refine.lr: 0.25
+corner_refine.strip_half_width0: 0.25
+corner_refine.strip_half_width1: 0.25
+
+# refinement (checkerboard validity)
+checkerboard_validity.tor_spacing: 0.25
+checkerboard_validity.tor_orth: 0.2
+
+# visualization (calibration uses original image size)
+viz_zoom: 1.0   # float ok
+
+# calibration speed/robustness
+# bootstrap:
+# - If total valid views M <= calib_B, we skip bootstrap and run once.
+# - If calib_R <= 1, we also run once.
+# - Otherwise, sample calib_B views and repeat calib_R runs; report mean±std.
+calib_max_iter: 50
+calib_fix_k3plus: true
+calib_use_intrinsic_guess: true
+calib_B: 32
+calib_R: 10

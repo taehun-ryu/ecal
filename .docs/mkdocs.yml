@@ -1,0 +1,29 @@
+site_name: corner2tag
+site_description: Official documentation for corner2tag release repository
+site_url: https://taehun-ryu.github.io/corner2tag/
+repo_url: https://github.com/taehun-ryu/corner2tag
+repo_name: corner2tag
+
+theme:
+  name: readthedocs
+
+docs_dir: content
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Prerequisites: prerequisite.md
+      - Quick Start: quick-start.md
+  - Calibration Guides:
+      - Checkerboard: checkerboard.md
+      - AprilTag: apriltag.md
+  - Deployment:
+      - Docker: docker.md
+  - Guidance:
+      - Practical Usage: guidance/practical-usage.md
+      - Troubleshooting: guidance/troubleshooting.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true

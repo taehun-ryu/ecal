@@ -43,7 +43,6 @@ bin/
 build/
 msg_gen/
 srv_gen/
-docs/
 lib/
 cmake_install.cmake
 Makefile
@@ -61,3 +60,4 @@ build-*/
 *.txt.user
 *.gch
 /.project
+docs/

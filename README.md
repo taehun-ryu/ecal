@@ -11,8 +11,8 @@
   </p>
 
 <div align='center'>
-  <!-- <a href='https://openaccess.thecvf.com/content/CVPR2025/papers/Lee_HUSH_Holistic_Panoramic_3D_Scene_Understanding_using_Spherical_Harmonics_CVPR_2025_paper.pdf'><img src='https://img.shields.io/badge/Paper-CvF-blue'></a> -->
   <a href='https://vision3d-lab.github.io/corner2tag/'><img src='https://img.shields.io/badge/Project-Page-gr'></a>
+  <a href='https://taehun-ryu.github.io/corner2tag/'><img src='https://img.shields.io/badge/Docs-MkDocs-0ea5e9?style=flat-square&logo=materialformkdocs&logoColor=white' alt='Documentation'></a>
 </div>
 
 > This repository is the official implementation of the paper "From Corners to Fiducial Tags: Revisiting Checkerboard Calibration for Event Cameras".
@@ -35,3 +35,26 @@
 - [ ] ROS2 `event_camera_msgs` driver support (direct `.db3` input)
 
 ROS support note: Our current focus is **ROS2** `event_camera_msgs` development, and ROS1 support is provided through `h5` converters.
+
+## How to use
+
+For detailed setup and usage instructions, please refer to [the full documentation](https://taehun-ryu.github.io/corner2tag/).
+
+## Acknowledgments
+
+This work is built on several great research works, thanks a lot to all the authors for sharing their works.
+
+- [Event Cameras, Contrast Maximization and Reward Functions: An Analysis [CVPR 2019]](https://github.com/TimoStoff/events_contrast_maximization)
+- [Target-free Extrinsic Calibration of Event-LiDAR Dyad using Edge Correspondences [RA-L 2023]](https://github.com/wlxing1901/contrast-maximization-for-event-cameras)
+
+## Citation
+```latex
+@InProceedings{ryu2026corner2tag,
+    author    = {Taehun Ryu and Changwoo Kang and Kyungdon Joo},
+    title     = {From Corners to Fiducial Tags: Revisiting Checkerboard Calibration for Event Cameras},
+    booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {},
+    year      = {2026},
+    pages     = {}
+}
+```

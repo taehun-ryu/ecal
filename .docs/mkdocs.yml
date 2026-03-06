@@ -3,6 +3,7 @@ site_description: Official documentation for corner2tag release repository
 site_url: https://taehun-ryu.github.io/corner2tag/
 repo_url: https://github.com/taehun-ryu/corner2tag
 repo_name: corner2tag
+edit_uri: ''
 
 theme:
   name: readthedocs

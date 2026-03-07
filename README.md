@@ -1,7 +1,5 @@
 <p align="center">
-
   <h1 align="center">From Corners to Fiducial Tags: Revisiting Checkerboard Calibration for Event Cameras</h1>
-
   <p align="center">
     <a href="https://taehun-ryu.github.io/" rel="external nofollow noopener" target="_blank"><strong>Taehun Ryu</strong></a>
     ·
@@ -9,11 +7,14 @@
     ·
     <a href="https://vision3d-lab.github.io/" rel="external nofollow noopener" target="_blank"><strong>Kyungdon Joo</strong></a>
   </p>
+</p>
 
-<div align='center'>
-  <a href='https://vision3d-lab.github.io/corner2tag/'><img src='https://img.shields.io/badge/Project-Page-gr'></a>
-  <a href='https://taehun-ryu.github.io/corner2tag/'><img src='https://img.shields.io/badge/Docs-MkDocs-0ea5e9?style=flat-square&logo=materialformkdocs&logoColor=white' alt='Documentation'></a>
-</div>
+<p align="center">
+  <a href="TBD"><img src="https://img.shields.io/badge/Paper-Coming%20Soon-2563EB" alt="Paper"></a>
+  <a href="https://vision3d-lab.github.io/corner2tag/"><img src="https://img.shields.io/badge/Project-Page-0EA5E9" alt="Project Page"></a>
+  <a href="TBD"><img src="https://img.shields.io/badge/arXiv-Coming%20Soon-B31B1B?logo=arxiv&logoColor=white" alt="arXiv"></a>
+  <a href="https://taehun-ryu.github.io/corner2tag/"><img src="https://img.shields.io/badge/Docs-corner2tag-475569?logo=readthedocs&logoColor=white" alt="Documentation"></a>
+</p>
 
 > This repository is the official implementation of the paper "From Corners to Fiducial Tags: Revisiting Checkerboard Calibration for Event Cameras".
 

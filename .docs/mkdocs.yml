@@ -15,12 +15,13 @@ nav:
   - Getting Started:
       - Prerequisites: prerequisite.md
       - Quick Start: quick-start.md
-  - Calibration Guides:
+  - Calibration:
       - Checkerboard: checkerboard.md
       - AprilTag: apriltag.md
-  - Deployment:
+  - Optional Tools:
+      - Data Conversion: data-conversion.md
       - Docker: docker.md
-  - Guidance:
+  - Additional Guidance:
       - Practical Usage: guidance/practical-usage.md
       - Troubleshooting: guidance/troubleshooting.md
 

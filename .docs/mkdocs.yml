@@ -1,3 +1,4 @@
+# For develop: mkdocs serve -f .docs/mkdocs.yml
 site_name: corner2tag
 site_description: Official documentation for corner2tag release repository
 site_url: https://taehun-ryu.github.io/corner2tag/
@@ -14,16 +15,16 @@ nav:
   - Home: index.md
   - Getting Started:
       - Prerequisites: prerequisite.md
-      - Quick Start: quick-start.md
-  - Calibration:
-      - Checkerboard: checkerboard.md
-      - AprilTag: apriltag.md
-  - Optional Tools:
-      - Data Conversion: data-conversion.md
-      - Docker: docker.md
-  - Additional Guidance:
-      - Practical Usage: guidance/practical-usage.md
-      - Troubleshooting: guidance/troubleshooting.md
+  #     - Quick Start: quick-start.md
+  # - Calibration:
+  #     - Checkerboard: checkerboard.md
+  #     - AprilTag: apriltag.md
+  # - Optional Tools:
+  #     - Data Conversion: data-conversion.md
+  #     - Docker: docker.md
+  # - Additional Guidance:
+  #     - Practical Usage: guidance/practical-usage.md
+  #     - Troubleshooting: guidance/troubleshooting.md
 
 markdown_extensions:
   - admonition

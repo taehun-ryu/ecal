@@ -18,6 +18,8 @@
 
 > This repository is the official implementation of the paper "From Corners to Fiducial Tags: Revisiting Checkerboard Calibration for Event Cameras".
 
+> Code release is planned after June 2026 (exact date TBD).
+
 ## News
 <!-- :tada: celerbrate -->
 <!-- :rocket: major release -->
@@ -42,8 +44,6 @@ This work is built on several great research works, thanks a lot to all the auth
     author    = {Taehun Ryu and Changwoo Kang and Kyungdon Joo},
     title     = {From Corners to Fiducial Tags: Revisiting Checkerboard Calibration for Event Cameras},
     booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    month     = {},
     year      = {2026},
-    pages     = {}
 }
 ```

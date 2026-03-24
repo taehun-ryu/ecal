@@ -2,5 +2,4 @@
 
 This documentation is under preparation.
 
-Only the [Prerequisites](prerequisite.md) page is currently finalized.
-All other sections will be published in a future update.
+All other sections will be published in future updates, aligned with the public code release.

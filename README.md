@@ -25,7 +25,7 @@
 <!-- :rocket: major release -->
 <!-- :sparkles: new feature / implementation -->
 <!-- :bug: bug fix -->
-- 26.02.23. :tada: corner2tag was accepted to CVPR 2026! Final recommendation: 5-5-6.
+- 26.02.23. :tada: corner2tag was accepted to CVPR 2026! (acceptance rate: 25.42%).
 
 ## How to use
 

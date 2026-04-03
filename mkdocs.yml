@@ -1,4 +1,4 @@
-# For develop: mkdocs serve -f .docs/mkdocs.yml
+# For local preview: mkdocs serve
 site_name: corner2tag
 site_description: Official documentation for corner2tag release repository
 site_url: https://taehun-ryu.github.io/corner2tag/
@@ -8,8 +8,6 @@ edit_uri: ''
 
 theme:
   name: readthedocs
-
-docs_dir: content
 
 nav:
   - Home: index.md

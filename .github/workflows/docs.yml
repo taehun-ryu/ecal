@@ -4,9 +4,10 @@ on:
   push:
     branches: [main]
     paths:
-      - ".docs/**"
+      - "docs/**"
+      - "mkdocs.yml"
+      - ".github/requirements-docs.txt"
       - ".github/workflows/docs.yml"
-      - "README.md"
   workflow_dispatch:
 
 permissions:
@@ -14,44 +15,33 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: corner2tag-docs-pages
-  cancel-in-progress: true
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Verify repository target
-        run: |
-          if [ "${GITHUB_REPOSITORY}" = "taehun-ryu/taehun-ryu.github.io" ]; then
-            echo "This workflow must run in taehun-ryu/corner2tag."
-            exit 1
-          fi
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
 
       - name: Install docs dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r .docs/requirements.txt
+          pip install -r .github/requirements-docs.txt
 
       - name: Build docs site
-        run: mkdocs build --strict -f .docs/mkdocs.yml --site-dir site
+        run: mkdocs build --strict
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
-          path: .docs/site
+          path: site
 
   deploy:
     needs: build
@@ -62,4 +52,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

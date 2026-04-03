@@ -60,4 +60,5 @@ build-*/
 *.txt.user
 *.gch
 /.project
-docs/
+site/
+*.codex
